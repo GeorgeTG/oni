@@ -20,7 +20,7 @@ export interface INeovimBufferUpdate {
 }
 
 export class NeovimBufferUpdateManager {
-    private _onBufferUpdateEvent = new Event<INeovimBufferUpdate>()
+    private _onBufferUpdateEvent = new Event<INeovimBufferUpdate>("NeovimBufferUpdateManager::onBufferUpdateEvent")
     private _lastEventContext: EventContext
     private _lastMode: string
 

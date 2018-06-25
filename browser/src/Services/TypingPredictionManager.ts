@@ -21,7 +21,7 @@ export interface ITypingPrediction {
 }
 
 export class TypingPredictionManager {
-    private _predictionsChanged: Event<ITypingPrediction> = new Event<ITypingPrediction>()
+    private _predictionsChanged: Event<ITypingPrediction> = new Event<ITypingPrediction>("TypingPredictionManager::predictionsChanged")
     private _predictions: IPredictedCharacter[] = []
     private _backgroundColor: string
     private _foregroundColor: string
